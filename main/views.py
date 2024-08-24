@@ -50,7 +50,7 @@ def contact(request):
         email = request.POST.get('email')
         message = request.POST.get('message')
 
-        intro_and_message = f"Hi, {name} here.\n" + \
+        intro_and_message = f"Hi, {name} here!\n\n" + \
             message + "\n\n" + f"Reach me here: {email}"
 
         try:
